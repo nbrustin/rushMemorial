@@ -1,6 +1,6 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-  margin-bottom: 0;
+  margin: 0 2rem;
   border-radius: 0;
 }
 
@@ -50,7 +50,7 @@ ul li:nth-child(6) a {
 }
 .tab {
   border: 1px solid black;
-  padding: 1rem;
+  padding: 0.3rem 1rem;
   text-align: center;
   margin-top: 2rem;
   margin-left: 2rem;
