@@ -1,53 +1,134 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
+
 .navbar {
   margin: 0 2rem;
   border-radius: 0;
 }
 
+.nav-item a {
+  color: white;
+}
+
+.jumbotron {
+  background: url("./Images/cloudsJumbo.jpeg");
+  height: 100vh;
+  /* widows: 100%; */
+  background-position: top right;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* object-fit: cover; */
+}
+
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+  background-color: grey;
+}
+
+.entertainment {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(96, 127, 170, 0.24),
+    rgba(96, 127, 170, 1)
+  );
+}
+
+.card {
+  background-color: #678ab8;
+  width: 236px;
+  height: 250px;
+}
+
+.image-box {
+  height: 162px;
+}
+.card-img-top {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 15px;
+}
+a {
+  color: inherit;
+}
+
+.hvr-grow {
+  padding: 1em 3em;
+  cursor: pointer;
+  background: #115cef;
+  text-decoration: none;
+  color: white;
+  border: 0.5px solid rgba(255, 255, 255, 0.514);
+  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+.hvr-grow:hover {
+  /* display: inline-block;
+  vertical-align: middle; */
+  /* -webkit-transform: perspective(1px) translateZ(0); */
+  /* transform: perspective(1px) translateZ(0); */
+  /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+a:hover {
+  color: whitesmoke;
+  opacity: 0.4;
+}
 ul li a {
   font-size: 20px;
   margin: 0 0.7rem;
 }
-ul li:nth-child(1) a {
-  color: #2d2e92 !important;
+
+.nav-link {
+  color: white !important;
 }
 
-ul li:nth-child(2) a {
-  color: #00b6f9 !important;
+.location {
+  margin: 50px 0;
 }
 
-ul li:nth-child(3) a {
-  color: #00b83d !important;
+.donateCard {
+  background-image: url("./Images/donateBox.png");
+  width: 499px;
+  height: 399px;
+  background-color: 0;
+  background-repeat: no-repeat;
 }
 
-ul li:nth-child(4) a {
-  color: #ff0090 !important;
+.donateCard .card-body {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-ul li:nth-child(5) a {
-  color: #ff0016 !important;
+.rushCard {
+  background-image: url("./Images/foundationBox.png");
+  width: 499px;
+  height: 399px;
+  background-repeat: no-repeat;
+  float: right;
 }
 
-ul li:nth-child(6) a {
-  color: #241d1f !important;
+.rushCard .card-body {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.jumbo {
-  margin-top: 5rem;
-}
-.triangle {
-  /* display: table-cell; */
-  /* vertical-align: bottom; */
-}
-
-.fund {
-  margin: 0.7rem 0;
-}
-
-.rush {
-  height: 60%;
-  width: 60%;
-}
 .tab {
   border: 1px solid black;
   padding: 0.3rem 1rem;
@@ -57,10 +138,6 @@ ul li:nth-child(6) a {
   color: #af3b3b;
   font-size: 18px;
 }
-
-/* .tab:nth-of-type(1) {
-  margin-left: 5px;
-} */
 
 /* Add a gray background color and some padding to the footer */
 footer {
