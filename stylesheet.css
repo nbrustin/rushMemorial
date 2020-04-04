@@ -9,6 +9,10 @@
   color: white;
 }
 
+.jumboRow {
+  margin-top: 200px;
+}
+
 .jumbotron {
   background: url("./Images/cloudsJumbo.jpeg");
   height: 100vh;
@@ -18,6 +22,81 @@
   background-repeat: no-repeat;
   background-size: cover;
   /* object-fit: cover; */
+}
+
+@media screen and (max-width: 768px) {
+  .jumboRow {
+    margin-top: 100px;
+  }
+  .rush {
+    height: 300px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jumboRow {
+    margin-top: 50px;
+  }
+  .rush {
+    margin-top: 30px;
+  }
+}
+
+.rush {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes example {
+  0% {
+    left: -10px;
+    top: 10px;
+    transform: rotate(-1deg);
+  }
+  12.5% {
+    left: -5px;
+    top: 6px;
+    transform: rotate(0deg);
+  }
+  25% {
+    left: 0px;
+    top: 10px;
+    transform: rotate(1deg);
+  }
+  37.5% {
+    left: 5px;
+    top: 6px;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 10px;
+    top: 10px;
+    transform: rotate(-1deg);
+  }
+  62.5% {
+    left: 5px;
+    top: 6px;
+    transform: rotate(0deg);
+  }
+  75% {
+    left: 0px;
+    top: 6px;
+    transform: rotate(1deg);
+  }
+  87.5% {
+    left: -5px;
+    top: 6px;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: -10px;
+    top: 10px;
+    transform: rotate(-1deg);
+  }
 }
 
 #map {
